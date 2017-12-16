@@ -15,6 +15,6 @@ TextView t;
 
         t=(TextView)findViewById(R.id.textView2);
 
-        t.setText("Let's rock on!!!!");
+        t.setText("Let's ro!");
     }
 }
