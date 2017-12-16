@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Helloworld</string>
+    <string name="app_name">helloworld</string>
+    <string-array name="game_array">
+        <item>Badminton</item>
+        <item>Football</item>
+        <item>Hockey</item>
+        <item>Swimming</item>
+        <item>Atletics</item>
+        <item>Cricket</item>
+        <item>Basketball</item>
+        <item>Lawn tennis</item>
+    </string-array>
+    <string-array name="location_array">
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Hyderabad</item>
+        <item>kochi</item>
+    </string-array>
 </resources>
