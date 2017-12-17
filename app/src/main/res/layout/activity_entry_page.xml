@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mohith.helloworld.entry_page">
+  <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:hint="Enter your name"
+      android:textSize="32sp"
+      android:layout_marginTop="80dp"
+      android:layout_margin="16dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your E-mail ID"
+        android:layout_marginTop="40dp"
+        android:textSize="32sp"
+        android:layout_marginLeft="16dp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agree to terms and conditions"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/checkbox"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="130dp"
+        android:visibility="gone"
+        android:id="@+id/subbut"/>
+
+
+
+</LinearLayout>
