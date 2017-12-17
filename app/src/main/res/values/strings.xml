@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">Helloworld</string>
+    <string-array name="game_array">
+        <item>Badminton</item>
+        <item>Football</item>
+        <item>Hockey</item>
+        <item>Swimming</item>
+        <item>Atletics</item>
+        <item>Cricket</item>
+        <item>Basketball</item>
+        <item>Lawn tennis</item>
+    </string-array>
+    <string-array name="location_array">
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Hyderabad</item>
+        <item>kochi</item>
+    </string-array>
+    <string-array name="day_array">
+    <item>Monday</item>
+    <item>Tuesday</item>
+    <item>Wednestday</item>
+    <item>thrusday</item>
+    <item>Friday</item>
+    <item>Saturday</item>
+    <item>Sunday</item>
+    </string-array>
+    <string-array name="price_array">
+        <item>Less than 2000</item>
+        <item>2000-4000</item>
+        <item>4000-10000</item>
+        <item>10000-20000</item>
+        <item>20000-30000</item>
+        <item>Above 30000</item>
+    </string-array>
+    <string-array name="type_array">
+        <item>Organisation</item>
+        <item>Individiual</item>
+        <item>Group</item>
+    </string-array>
 </resources>
