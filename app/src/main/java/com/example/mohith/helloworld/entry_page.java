@@ -41,23 +41,26 @@ public class entry_page extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 button.setVisibility(View.VISIBLE);
 
-                button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+            }
+        });
 
-                            if (name.getText().toString().trim() != null || email.getText().toString().trim() != null) {
-                                Intent i = new Intent(entry_page.this, filter_page.class);
-                                startActivity(i);
-                            } else if (name.getText().toString().trim() == null) {
-                                name.setBackgroundColor(Color.RED);
-                            } else if (email.getText().toString().trim() == null) {
-                                email.setBackgroundColor(Color.RED);
-                            } else {
-                                Toast.makeText(getApplicationContext(), "One or more invalid inputs", Toast.LENGTH_LONG).show();
-                            }
 
-                    }
-                });
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if ((name.getText().toString().trim()) != null && (email.getText().toString().trim()) != null) {
+                    Intent i = new Intent(entry_page.this, filter_feed.class);
+                    startActivity(i);
+                } else if ((name.getText().toString().trim()) == null) {
+                    name.setBackgroundColor(Color.RED);
+                    Toast.makeText(getApplicationContext(), "One or more left blank", Toast.LENGTH_LONG).show();
+                } else if ((email.getText().toString().trim()) == null) {
+                    email.setBackgroundColor(Color.RED);
+                    Toast.makeText(getApplicationContext(), "One or more left blank", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "One or more invalid inputs", Toast.LENGTH_LONG).show();
+                }
 
             }
         });

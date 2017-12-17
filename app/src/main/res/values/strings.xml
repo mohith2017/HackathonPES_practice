@@ -17,13 +17,13 @@
         <item>kochi</item>
     </string-array>
     <string-array name="day_array">
-    <item>Monday</item>
-    <item>Tuesday</item>
-    <item>Wednestday</item>
-    <item>thrusday</item>
-    <item>Friday</item>
-    <item>Saturday</item>
-    <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednestday</item>
+        <item>thrusday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
     </string-array>
     <string-array name="price_array">
         <item>Less than 2000</item>
@@ -38,4 +38,5 @@
         <item>Individiual</item>
         <item>Group</item>
     </string-array>
+    <string name="title_activity_filter_feed">filter_feed</string>
 </resources>
