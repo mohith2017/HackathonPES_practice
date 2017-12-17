@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.mohith.helloworld.entry_page">
-  <EditText
+
+  <CheckBox
+      android:id="@+id/checkbox"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:hint="Enter your name"
-      android:textSize="32sp"
-      android:layout_marginTop="80dp"
-      android:layout_margin="16dp"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter your E-mail ID"
-        android:layout_marginTop="40dp"
-        android:textSize="32sp"
-        android:layout_marginLeft="16dp"/>
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner5"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="40dp"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agree to terms and conditions"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="16dp"
-        android:id="@+id/checkbox"/>
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="94dp"
+      android:text="Agree to terms and conditions"
+      android:textColor="#00DD00"
+      android:textStyle="italic" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,6 +27,77 @@
         android:visibility="gone"
         android:id="@+id/subbut"/>
 
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="28dp"
+      android:background="#EF5350"
+      android:text="SUBMIT"
+      android:visibility="gone"/>
+
+  <Spinner
+      android:id="@+id/spinner2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/checkbox"
+      android:layout_marginBottom="110dp"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_toEndOf="@+id/subbut" />
+
+  <EditText
+      android:id="@+id/editText3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignEnd="@+id/checkbox"
+      android:layout_below="@+id/subbut"
+      android:layout_marginEnd="17dp"
+      android:layout_marginTop="77dp"
+      android:ems="10"
+      android:hint="Name"
+      android:inputType="textPersonName" />
+
+  <EditText
+      android:id="@+id/editText4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignStart="@+id/editText3"
+      android:layout_below="@+id/editText3"
+      android:layout_marginTop="27dp"
+      android:ems="10"
+      android:hint="Email id"
+      android:inputType="textEmailAddress" />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/subbut"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="13dp"
+      android:text="All fields with * are mandatory"
+      android:textColor="#ff0000" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignTop="@+id/editText3"
+      android:layout_toEndOf="@+id/editText3"
+      android:text="*"
+      android:textColor="#ff0000" />
+
+  <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignEnd="@+id/spinner2"
+      android:layout_alignTop="@+id/editText4"
+      android:text="*"
+      android:textColor="#ff0000" />
 
 
-</LinearLayout>
+</>
